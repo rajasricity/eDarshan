@@ -48,15 +48,13 @@
         
     <!-- Main Container -->
     <div id="main" class="main">
-
-      <!-- Toolbar -->
-
-      <!-- Page Contents -->
-
-      <!-- End of Page Contents -->
-
-      <!-- End of Sidebars -->
-
+<div id="show" style="display:none">
+    <br><br>
+<br><br><br><br>
+<center><img src="images/connec.png" style="width:100px;height:100px;"></center>
+<center><h4>CHECK CONNECTION</h4></center>
+<center><button onclick="refresh();">REFRESH</button></center>
+</div>
     </div>
     <!-- End of Main Container -->
 
@@ -73,8 +71,23 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function(){
-    alert("! Package Error");
+$.ajax({
+   url:"https://edarshan.org/mobiledarshan/connect.php",
+   beforeSend:function(){
+
+   },
+   success: function(str){
+     $("#show").hide();
+    location.href="https://edarshan.org/mobiledarshan/";
+   },
+   error: function(jqXHR, status, error){
+     $("#show").show();
+   }
+});
         });
+function refresh(){
+  location.reload();
+}
     </script>
   </body>
 </html>
