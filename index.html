@@ -70,15 +70,17 @@
     <script src="js/vendor/materialize.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+    //var server = "http://localhost/edarshan/mobiledarshan/";
+    var server = "https://edarshan.org/mobiledarshan/";
         $(document).ready(function(){
 $.ajax({
-   url:"https://edarshan.org/mobiledarshan/connect.php",
+   url:server+"connect.php",
    beforeSend:function(){
 
    },
    success: function(str){
      $("#show").hide();
-    location.href="https://edarshan.org/mobiledarshan/";
+    location.href=server;
    },
    error: function(jqXHR, status, error){
      $("#show").show();
