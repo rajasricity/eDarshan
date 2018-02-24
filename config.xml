@@ -18,7 +18,7 @@
     <icon src="resources/hdpi.png" density="hdpi" />
     <icon src="resources/xhdpi.png" density="xhdpi" />
     </platform>
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="5000" />
     <content src="index.html" />
     <platform name="android">
     <splash platform="android" qualifier="port-ldpi" src="resources/ldpisp.png" />
