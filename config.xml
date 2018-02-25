@@ -7,7 +7,7 @@
     <author email="sanarajasekhar@gmail.com" href="https://edarshan.org">
         eDarshan Book Seva
     </author>
-    <preference name="OverrideUserAgent" value"Mozilla/5.0 Google" />
+    <preference name="OverrideUserAgent" value="Mozilla/5.0 My Browser" />
     <preference name="orientation" value="portrait"/>
     <preference name="fullscreen" value="true"/>
   <preference name="KeepRunning" value="false"/>
