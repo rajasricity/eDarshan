@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>eDarshan - Book Seva Online</title>
-    <meta name="description" content="Sullurupet Information">
+    <meta name="description" content="Book Seva Online">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-
+    <meta http-equiv="Content-Security-Policy" content="
+                        default-src * data: blob: ws: wss: gap://ready file://*;
+                        style-src * 'unsafe-inline';
+                        script-src * 'unsafe-inline' 'unsafe-eval';
+                        connect-src * ws: wss:;">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileColor" content="#222222">
